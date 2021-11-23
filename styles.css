@@ -1,0 +1,30 @@
+.header{
+    padding: 5px;
+    background-color: #2E294E ;
+    color: #5ADBFF; 
+    border-radius: 5px;
+    
+}
+.pill-nav{
+    justify-content: space-around;
+}
+
+.pill-nav a{
+    display: inline-block;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.pill-nav a:hover {
+    background-color: #F96601;
+    color: black;
+}
+
+.pill-nav a.active {
+    background-color: dodgerblue;
+    color: white;
+}

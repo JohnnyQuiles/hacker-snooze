@@ -1,12 +1,34 @@
+body{
+    background-color: #EAF2D7;
+}
+
 .header{
     padding: 5px;
     background-color: #2E294E ;
     color: #5ADBFF; 
     border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+h1{
+color: #f96601; 
+text-decoration: none;
+
+}
+
+#hacker{
+    justify-self: center;
     
 }
+
 .pill-nav{
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .pill-nav a{
@@ -19,6 +41,7 @@
     font-size: 17px;
     border-radius: 5px;
 }
+
 .pill-nav a:hover {
     background-color: #F96601;
     color: black;
@@ -27,4 +50,50 @@
 .pill-nav a.active {
     background-color: dodgerblue;
     color: white;
+}
+.child .title {
+    background-color:#F96601;
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+
+.child .apple{
+
+    font-size: 20px;
+    margin: 10px;
+    
+
+}
+.apple{
+    display: block;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 595px) {
+
+    .pill-nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .pill-nav a{
+        display: inline-block;
+        justify-content: space-evenly;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    
+    .pill-nav a:hover {
+        background-color: #F96601;
+        color: black;
+    }
+    .child .apple {
+        font-size: 20px;
+    }
 }
